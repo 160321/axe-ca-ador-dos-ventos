@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Templo de Axé Caçador dos Ventos — Ilé Asẹ́ Ọdẹ Atẹ́gùn. História, ancestralidade, Ìwà Pẹ̀lẹ́ e preservação da tradição.">
+<title>Templo de Axé Caçador dos Ventos | Ilé Asẹ́ Ọdẹ Atẹ́gùn</title>
+<style>
+:root {
+  --verde:#183d31; --verde2:#285b48; --dourado:#c49a3a; --creme:#f7f2e8;
+  --terra:#7b5136; --texto:#25312c; --branco:#fffdf8; --sombra:0 14px 35px rgba(24,61,49,.12);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--texto);background:var(--creme);line-height:1.75}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(24,61,49,.96);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:12px 5%;box-shadow:0 4px 18px rgba(0,0,0,.16)}
+.brand{color:#fff;text-decoration:none;font-weight:bold;font-size:1.05rem} .brand small{display:block;color:#d9bf75;font-weight:normal;font-size:.75rem}
+nav .links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end} nav a{color:#fff;text-decoration:none;font-size:.88rem} nav a:hover{color:#e2c66e}
+.hero{min-height:92vh;display:flex;align-items:center;padding:125px 7% 80px;color:white;position:relative;overflow:hidden;background:linear-gradient(120deg,rgba(12,42,31,.93),rgba(35,74,57,.78)),url("101848_2.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto -10% -120px;height:260px;background:var(--creme);border-radius:50% 50% 0 0}
+.hero-content{max-width:850px;position:relative;z-index:2} .eyebrow{color:#e0c26c;text-transform:uppercase;letter-spacing:3px;font-size:.8rem;font-weight:bold}
+h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:1.05;margin:18px 0} .hero h2{font-weight:normal;color:#e8d69f;margin:0 0 25px;font-size:clamp(1.1rem,2vw,1.6rem)}
+.quote{font-size:1.2rem;max-width:720px;border-left:3px solid var(--dourado);padding-left:20px}
+.btn{display:inline-block;margin-top:24px;background:var(--dourado);color:#17352a;padding:12px 21px;border-radius:30px;text-decoration:none;font-weight:bold;transition:all 0.3s ease}
+.btn:hover{background:#e2c66e;transform:translateY(-2px)}
+section{padding:90px 7%;scroll-margin-top:70px} .section-head{max-width:850px;margin-bottom:35px} .kicker{color:var(--terra);font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h2{color:var(--verde);font-size:clamp(2rem,4vw,3.2rem);line-height:1.15;margin:8px 0 18px} h3{color:var(--verde2);font-size:1.45rem;margin-top:30px}
+.intro{font-size:1.12rem} .story{max-width:980px} .story p{margin:0 0 18px}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px} .card{background:var(--branco);padding:25px;border-radius:18px;box-shadow:var(--sombra);border-top:4px solid var(--dourado)}
+.card h3{margin-top:0;font-size:1.2rem} .timeline{max-width:900px;margin:auto;border-left:3px solid var(--dourado);padding-left:30px}
+.event{margin:0 0 32px;position:relative} .event:before{content:"";position:absolute;width:13px;height:13px;background:var(--dourado);border-radius:50%;left:-38px;top:10px;border:4px solid var(--creme)} .year{font-size:1.3rem;font-weight:bold;color:var(--terra)}
+.alt{background:#ece5d6} table{width:100%;border-collapse:collapse;background:var(--branco);border-radius:14px;overflow:hidden;box-shadow:var(--sombra)} th,td{padding:13px 15px;text-align:left;border-bottom:1px solid #e4ded1} th{background:var(--verde);color:#fff} tr:last-child td{border:0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px} .photo-card{margin:0;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sombra)} .photo-card img{width:100%;height:320px;object-fit:cover;display:block} .photo-card figcaption{padding:14px 16px;font-size:.95rem;font-weight:500;color:var(--verde)}
+.leaders{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:stretch} .leader{background:var(--branco);border-radius:20px;overflow:hidden;box-shadow:var(--sombra);border:1px solid #e0d8c8} .leader img{width:100%;height:420px;object-fit:cover;object-position:top center} .leader .body{padding:24px} .leader h3{margin:0 0 6px;color:var(--verde)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px} .contact-box{background:var(--verde);color:white;border-radius:20px;padding:30px} .contact-box h2,.contact-box h3{color:white} .placeholder{padding:16px;background:#f0eadf;border-left:4px solid var(--dourado);border-radius:8px}
+.map-container{width:100%;height:320px;border-radius:16px;overflow:hidden;margin-top:20px;box-shadow:var(--sombra);border:2px solid var(--dourado)}
+.map-container iframe{width:100%;height:100%;border:0}
+footer{background:#102b22;color:#dfe9e2;text-align:center;padding:45px 7%} footer strong{color:#e2c66e}
+@media(max-width:760px){nav{align-items:flex-start} nav .links{gap:9px;font-size:.8rem} nav .brand{display:none} .hero{padding-left:6%;padding-right:6%} section{padding:70px 6%} .contact{grid-template-columns:1fr} table{font-size:.9rem} th,td{padding:10px}}
+</style>
+</head>
+<body>
+<nav>
+<a class="brand" href="#inicio">Templo de Axé Caçador dos Ventos<small>Ilé Asẹ́ Ọdẹ Atẹ́gùn</small></a>
+<div class="links">
+<a href="#historia">História</a><a href="#lideranca">Sacerdócio</a><a href="#iwa">Ìwà Pẹ̀lẹ́</a><a href="#fundamentos">Fundamentos</a><a href="#trajetoria">Trajetória</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a>
+</div>
+</nav>
+
+<header id="inicio" class="hero">
+<div class="hero-content">
+<div class="eyebrow">Ilé Asẹ́ Ọdẹ Atẹ́gùn</div>
+<h1>Templo de Axé<br>Caçador dos Ventos</h1>
+<h2>Um espaço de ancestralidade, aprendizado, acolhimento e preservação.</h2>
+<p class="quote">"Nós somos herdeiros de um Axé de cura e resistência. Nosso objetivo é envidar todos os esforços pela elevação do nível moral e espiritual da criatura humana através do amor, da humildade e da prática da caridade."</p>
+<a class="btn" href="#historia">Conheça nossa história</a>
+</div>
+</header>
+
+<section id="historia">
+<div class="section-head"><div class="kicker">Nossa história</div><h2>Uma caminhada construída pela ancestralidade</h2>
+<p class="intro">A história do Templo de Axé Caçador dos Ventos nasce das raízes de uma família, de sua ancestralidade e de uma profunda ligação com a natureza, as ervas, a espiritualidade e a tradição oral.</p></div>
+<div class="story">
+<h3>As raízes no Quilombo de Santa Eudóxia</h3>
+<p>Nosso avô Joaquim, pai de doze filhos, teve como filho consanguíneo mais velho nosso pai, nascido no quilombo natural de Santa Eudóxia. Aos doze anos, nosso pai saiu de casa, perambulando de cidade em cidade e sustentando-se através do trabalho braçal.</p>
+<p>Nossa avó, de origem espanhola, contava que, quando criança, nosso pai costumava sair para brincar às margens de um rio chamado Quilombo e desaparecer pelas matas. Ao anoitecer, quando nossos avós saíam à sua procura, muitas vezes o encontravam no meio da mata, amarrado a uma árvore e envolto em cipós.</p>
+<p>Quando questionado, dizia que tinha saído para brincar com um menino que só tinha uma perna e que esse menino o havia deixado ali amarrado. Esses acontecimentos se repetiram algumas vezes e foram compreendidos como sinais de uma profunda ligação com os mistérios e as forças da natureza.</p>
+<h3>O milagre das ervas e da cura</h3>
+<p>Nosso avó carregava consigo rezas e conhecimentos espirituais transmitidos por seus antepassados. Já em idade avançada, passou sua fazenda, que possuía o mesmo nome, Joaquim, para seus empregados.</p>
+<p>Nosso pai, já adulto, casou-se com nossa mãe, Maria, filha de baianos. Certo dia, sofreu um grave acidente quando uma carreta tombou e feriu gravemente sua cabeça. Após ser levado aos médicos, a família recebeu a orientação de que nada mais poderia ser feito e que ele deveria ser levado para casa.</p>
+<p>Nossa mãe, utilizando os conhecimentos sobre ervas recebidos de seus antepassados baianos, enfaixou a cabeça dele com pano branco e ervas sagradas, acompanhando o tratamento com orações. Com o passar do tempo, seu estado foi se normalizando. Essa experiência permaneceu como parte fundamental da memória familiar.</p>
+<h3>A fundação da casa</h3>
+<p>Anos mais tarde, após o desencarne de nosso avó, nosso pai começou a trabalhar espiritualmente de maneira espontânea. Iansã e Oxóssi tomaram sua cabeça. Logo em seguida, manifestou-se o espírito cujo nome era o mesmo de nosso avó, Joaquim.</p>
+<p>Familiares e amigos foram reunidos com o propósito de fundar uma casa de Oxóssi com Iansã. Em homenagem e gratidão, nosso pai deu o nome de Joaquim a esse trabalho sagrado.</p>
+<h3>O nascimento de Marinho</h3>
+<p>Com nossos pais já em idade avançada, próximos dos cinquenta anos, e depois de nossa mãe ter realizado uma cirurgia para não ter mais filhos, a família foi surpreendida por uma nova bênção: nasceu Marinho, hoje conhecido como <strong>Bàbá Ifáwunmi</strong>.</p>
+<p>Marinho cresceu dentro da casa religiosa. Sua educação aconteceu principalmente através dos exemplos vividos por seus pais: humildade, honestidade, amor ao próximo, prática da caridade, cultivo do Axé e gratidão a Deus, aos Orixás e aos guias.</p>
+</div>
+</section>
+
+<section id="lideranca" class="alt">
+<div class="section-head"><div class="kicker">Nossa casa</div><h2>Pessoas que dão continuidade à caminhada</h2>
+<p>Registros sagrados que honram os sacerdotes e a liderança do Ilé Asẹ́ Ọdẹ Atẹ́gùn.</p></div>
+<div class="leaders">
+<div class="leader">
+<img src="165856.png" alt="Bàbá Ifáwunmi e Iyá Bassé Ominike'">
+<div class="body">
+<h3>Bàbá Ifáwunmi & Iyá Bassé Ominike'</h3>
+<p>À frente do Ilé Asẹ́ Ọdẹ Atẹ́gùn na continuidade do trabalho de acolhimento, ensino e preservação ancestral.</p>
+</div>
+</div>
+<div class="leader">
+<img src="171732.jpg" alt="Ilustração Tradicional de Bàbá Ifáwunmi">
+<div class="body">
+<h3>Bàbá Ifáwunmi</h3>
+<p>Representação artística em estilo tradicional que celebra a oralidade, a benção e a liderança espiritual do Babalorixá.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="iwa">
+<div class="section-head"><div class="kicker">Ìwà Pẹ̀lẹ́</div><h2>Educação e bom caráter</h2><p class="intro">Nossa caminhada espiritual exige disposição para aprender, coração aberto e humildade para reconhecer que sempre podemos evoluir.</p></div>
+<div class="values">
+<div class="card"><h3>Aprender com humildade</h3><p>A evolução espiritual acontece quando desarmamos o coração e o Ori, abrindo espaço para receber a sabedoria.</p></div>
+<div class="card"><h3>Evolução diária</h3><p>Buscar ser hoje uma pessoa melhor do que fomos ontem, reconhecendo nossas falhas e procurando repará-las.</p></div>
+<div class="card"><h3>Inteligência à frente da força</h3><p>Diante das adversidades, buscar a calma, a sabedoria e a inteligência antes do impulso ou da força bruta.</p></div>
+<div class="card"><h3>O Axé da fala</h3><p>Utilizar nossas palavras para ensinar o bem, edificar e acolher, afastando o desrespeito, a ingratidão e as fofocas.</p></div>
+</div>
+</section>
+
+<section id="fundamentos" class="alt">
+<div class="section-head"><div class="kicker">Tradição</div><h2>Fundamentos Nagô e sincretismo religioso</h2>
+<p>Os terreiros e templos de influência Nagô são compostos por espaços sagrados como os Pejis, altares destinados às divindades, e o Barracão, espaço destinado às cerimônias públicas.</p>
+<p>Nossos antepassados perceberam semelhanças entre entidades e tradições e utilizaram o sincretismo como uma forma de preservar sua cultura, sua ciência e sua fé.</p></div>
+<div style="overflow-x:auto"><table><thead><tr><th>Divindade / Orixá / Entidade</th><th>Correspondência no sincretismo</th></tr></thead><tbody><tr><td>Olorum / Zambi</td><td>Deus</td></tr>
+<tr><td>Obatalá, Oxalá e Ifá</td><td>Pai, Filho e Espírito Santo</td></tr>
+<tr><td>Oxalá</td><td>Jesus Cristo</td></tr>
+<tr><td>Iemanjá</td><td>Nossa Senhora</td></tr>
+<tr><td>Nanã Buruku</td><td>Sant&#x27;Ana</td></tr>
+<tr><td>Xangô Kaô</td><td>São Jerônimo</td></tr>
+<tr><td>Xangô Agodô</td><td>São João Batista</td></tr>
+<tr><td>Xangô Aganjú</td><td>São Pedro</td></tr>
+<tr><td>Oxóssi</td><td>São Sebastião</td></tr>
+<tr><td>Ogum</td><td>São Jorge</td></tr>
+<tr><td>Ogum Iara</td><td>Joana D&#x27;Arc</td></tr>
+<tr><td>Iansã</td><td>Santa Bárbara</td></tr>
+<tr><td>Oxum</td><td>Nossa Senhora da Conceição</td></tr>
+<tr><td>Oxumarê</td><td>São Bartolomeu</td></tr>
+<tr><td>Obaluaiê</td><td>São Roque</td></tr>
+<tr><td>Omolú</td><td>São Lázaro</td></tr>
+<tr><td>Ibeji</td><td>Cosme, Damião e Doum</td></tr>
+<tr><td>Iorimá</td><td>São Cipriano</td></tr>
+<tr><td>Exu</td><td>Santo Antônio</td></tr></tbody></table></div>
+</section>
+
+<section id="trajetoria">
+<div class="section-head"><div class="kicker">Nossa trajetória</div><h2>Uma caminhada de fé, família e tradição</h2></div>
+<div class="timeline">
+<div class="event"><div class="year">1977</div><h3>Primeiro registro oficial</h3><p>O primeiro registro oficial localizado ocorreu em Ibaté. Inicialmente, a casa estava filiada à Federação Espírita de Umbanda Pai Sebastião de Pirassununga.</p></div>
+<div class="event"><div class="year">1999</div><h3>Nova sede</h3><p>Foi estabelecida uma nova sede no município de São Carlos, São Paulo.</p></div>
+<div class="event"><div class="year">Hoje</div><h3>Continuidade</h3><p>Sob a condução do Bàbá Ifáwunmi, o Ilé Asẹ́ Ọdẹ Atẹ́gùn segue firme no propósito de acolhimento, ensino e preservação ancestral.</p></div>
+</div>
+</section>
+
+<section id="galeria" class="alt">
+<div class="section-head"><div class="kicker">Memória</div><h2>Galeria Histórica da Família e do Templo</h2><p>Registros fotográficos preservados que registram os fundadores, os ritos e a construção da nossa casa de fé.</p></div>
+<div class="gallery">
+<figure class="photo-card"><img src="101844.jpg" alt="Dona Maria e Pai Joaquim no Peji" loading="lazy"><figcaption>Dona Maria e Pai Joaquim junto ao Peji e imagens sagradas</figcaption></figure>
+<figure class="photo-card"><img src="154880.jpg" alt="Elevação espiritual e sacerdócio" loading="lazy"><figcaption>Trabalho espiritual em família e celebração da fé</figcaption></figure>
+<figure class="photo-card"><img src="101843.jpg" alt="Reunião da comunidade e médiuns em julho de 1991" loading="lazy"><figcaption>Membros e filhos de fé reunidos — Julho de 1991</figcaption></figure>
+<figure class="photo-card"><img src="101848_2.jpg" alt="Bàbá Ifáwunmi em ritual na natureza" loading="lazy"><figcaption>Bàbá Ifáwunmi em ritual e conexão sagrada na natureza</figcaption></figure>
+</div>
+</section>
+
+<section id="contato">
+<div class="section-head"><div class="kicker">Visite-nos</div><h2>Será uma alegria receber você</h2><p class="intro">Se você deseja conhecer melhor nossa casa, nossa história e nosso trabalho, entre em contato conosco.</p></div>
+<div class="contact">
+<div class="contact-box">
+<h2>Entre em contato</h2>
+<p><strong>Endereço:</strong><br>Rua José Loreti, 61<br>Jardim Ipanema, São Carlos - SP<br>CEP: 13563-660</p>
+<p><strong>Telefone / WhatsApp:</strong><br>[inserir telefone]</p>
+<p><strong>E-mail:</strong><br>[inserir e-mail]</p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rua+Jos%C3%A9+Loreti,+61,+Jardim+Ipanema,+S%C3%A3o+Carlos+-+SP" target="_blank" rel="noopener">Como Chegar (Google Maps)</a>
+</div>
+<div>
+<h3>Localização no Mapa</h3>
+<p>Estamos localizados no Jardim Ipanema em São Carlos/SP. Utilize o mapa interativo abaixo para traçar sua rota até o nosso templo:</p>
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.5000000000000!2d-47.8800000!3d-22.0100000!2m3!1f0!0!1f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870a000000000%3A0x0000000000000000!2sRua%20Jos%C3%A9%20Loreti%2C%2061%20-%20Jardim%20Ipanema%2C%20S%C3%A3o%20Carlos%20-%20SP%2C%2013563-660!5e0!3m2!1wpt-BR!2sbr!4v1710000000000!5m2!1wpt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p><strong>Ilé Asẹ́ Ọdẹ Atẹ́gùn</strong><br>Templo de Axé Caçador dos Ventos</p>
+<p>"Que nossas palavras sejam utilizadas para edificar. Que nossas atitudes expressem amor, respeito e caridade."</p>
+<p>Axé.</p>
+</footer>
+</body>
+</html>
