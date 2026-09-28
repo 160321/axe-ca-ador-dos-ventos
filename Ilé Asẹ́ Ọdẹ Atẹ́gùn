@@ -179,3 +179,46 @@ footer{background:#102b22;color:#dfe9e2;text-align:center;padding:45px 7%} foote
 </footer>
 </body>
 </html>
+<!-- Seção Memória / Galeria Histórica do Ilé Asẹ́ Ọdẹ Atẹ́gùn -->
+<h2>Galeria Histórica da Família e do Templo</h2>
+<p>Registros fotográficos preservados que registram os fundadores, os ritos e a construção da nossa casa de fé.</p>
+
+<div class="galeria-container">
+
+  <!-- Foto 1: Lideranças Espirituais -->
+  <div class="galeria-item">
+    <h3>Bàbá Ifáwunmi e Iyá Bassé Ominike'</h3>
+    <img src="imagens/liderancas-espirituais.jpg" alt="Bàbá Ifáwunmi Marinho d'Ògún Mèjí e Iyá Bassé Ominike" />
+    <p>Bàbá Ifáwunmi d'Ògún Mèjí e Iyá Bassé Ominike' reunidos no templo.</p>
+  </div>
+
+  <!-- Foto 2: Estrutura do Peji e Barracão -->
+  <div class="galeria-item">
+    <h3>Nosso Espaço de Fé (Barracão)</h3>
+    <img src="imagens/decoracao-terreiro.jpg" alt="Barracão do Ilé Asẹ́ Ọdẹ Atẹ́gùn decorado para festividade" />
+    <p>Espaço preparado e decorado com carinho para as celebrações da comunidade.</p>
+  </div>
+
+  <!-- Foto 3: Sacerdócio e Caminhada -->
+  <div class="galeria-item">
+    <h3>Elevação Espiritual e Sacerdócio</h3>
+    <img src="imagens/sacerdotes-traje-tradicional.jpg" alt="Bàbá Ifáwunmi e Iyá Bassé com fios de conta tradicionais" />
+    <p>Trabalho espiritual em família e celebração contínua da nossa fé.</p>
+  </div>
+
+  <!-- Foto 4: Comunidade Reunida -->
+  <div class="galeria-item">
+    <h3>Reunião da Comunidade e Filhos de Fé</h3>
+    <img src="imagens/comunidade-reunida.jpg" alt="Bàbá Ifáwunmi junto aos membros e filhos de fé da casa" />
+    <p>Membros e filhos de fé reunidos firmes no propósito de acolhimento e caridade.</p>
+  </div>
+
+  <!-- Foto 5: Conexão e Sorrisos de Axé -->
+  <div class="galeria-item">
+    <h3>União e Tradição Familiar</h3>
+    <img src="imagens/baba-e-iya-sorrindo.jpg" alt="Bàbá Ifáwunmi e Iyá Bassé Ominike sorrindo no templo" />
+    <p>A força do Axé compartilhada através do amor, respeito e ancestralidade.</p>
+  </div>
+
+</div>
+
